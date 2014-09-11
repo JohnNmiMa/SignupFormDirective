@@ -9,15 +9,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 </head>
 <body ng-controller="SignupCtrl">
-    <div class="appContainer">
-        <h1 id="companyName">Acme Inc.</h1>
+    <div class="container">
         <opt-in>
             <!-- set brand logo image as background for this css class  -->
-            <div class="brand-logo"></div>
+            <div class="brand-logo col-sm-4"></div>
         </opt-in>
+
         <footer>
             <p ng-if="submitted == true">Thanks for shopping with Acme, {{data.firstName}} {{data.lastName}}.</p>
         </footer>
+
         <script src="./jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js" type="text/javascript"></script>

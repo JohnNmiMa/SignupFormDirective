@@ -11,47 +11,52 @@ body {
     font-family: "source-sans-pro","Source Sans Pro","Helvetica Neue",Arial,sans-serif;
 }
 
-.appContainer {
-    position:relative;
-    margin:auto;
-    width:330px;
+.container {
+    max-width:400px;
+    min-width:310px;
 }
 
 .brand-logo {
-    display:inline-block;
     background-image: url("angularjs-logo.png");
     background-repeat: no-repeat;
     background-size: 125px 125px;
-    width:125px;
+    background-position: center;
+    width:100%;
     height:125px;
-    vertical-align: top;
 }
 
 .formInputs {
-    display:inline-block;
-    width:200px;
     text-align: -webkit-center;
-    vertical-align: top;
 }
-    .formInputs input {
-        padding:0 5px;
-        width:200px;
-    }
-    .formInputs input.firstName, .formInputs input.lastName {
-        width:95px;
+    .formInputs div.name.row {
         margin-bottom: 5px;
     }
-    .formInputs input.firstName {
-        float:left;
-        margin-right:5px;
+    .formInputs input {
+        padding:0 5px;
     }
-    .formInputs input.lastName {
-        float:right;
+    .formInputs li.firstName {
+        padding-right:5px;
     }
-    .formInputs input.email {
+    .formInputs li.lastName {
+        padding-left:5px;
+    }
+    .formInputs li.email {
         margin-bottom: 10px;
     }
-    .formInputs input.submit {
+    .formInputs li button {
+        width:100%;
+    }
+    @media(min-width:768px) {
+        .formInputs li.firstName {
+            padding-left:0;
+        }
+        .formInputs li.lastName {
+            padding-right:0;
+        }
+        .formInputs li.email, .formInputs li {
+            padding-left:0;
+            padding-right:0;
+        }
     }
 
 footer p {

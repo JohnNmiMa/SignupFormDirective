@@ -1,15 +1,25 @@
-<div>
+<div class="row">
+    <h1 id="companyName">Acme Inc.</h1>
     <form ng-submit="submitted=true; submit()" name="signupForm" novalidate>
         <fieldset>
-            <legend>opt-in</legend>
-            <span ng-transclude></span>
-            <div class="formInputs">
-                <input class="firstName form-control" type="text" ng-model="data.firstName" placeholder="first name" required>
-                <input class="lastName form-control" type="text" ng-model="data.lastName" placeholder="last name" required>
-                <input class="email form-control" type="email" ng-model="data.email" placeholder="email" required>
-                <button class="btn btn-primary" type="submit">
-                    Give us yr infoz!
-                </button>
+            <legend class="col-xs-12">opt-in</legend>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="row">
+                <span ng-transclude></span>
+                <div class="formInputs col-sm-8">
+                    <div class="name row">
+                        <ul>
+                            <li class="col-xs-6 firstName"><input class="form-control" type="text" ng-model="data.firstName" placeholder="first name" required></li>
+                            <li class="col-xs-6 lastName"><input class="form-control" type="text" ng-model="data.lastName" placeholder="last name" required></li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul>
+                            <li class="col-xs-12 email"><input class="form-control" type="email" ng-model="data.email" placeholder="email" required></li>
+                            <li class="col-xs-12"><button class="btn btn-primary" type="submit">Give us yr infoz!</button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </fieldset>
     </form>
