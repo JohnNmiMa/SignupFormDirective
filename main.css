@@ -1,3 +1,11 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 body {
     padding:0 5px;
     font-family: "source-sans-pro","Source Sans Pro","Helvetica Neue",Arial,sans-serif;
@@ -6,22 +14,22 @@ body {
 .appContainer {
     position:relative;
     margin:auto;
-    width:420px;
+    width:330px;
 }
 
 .brand-logo {
     display:inline-block;
-    background-image: url("angularjs.jpg");
+    background-image: url("angularjs-logo.png");
     background-repeat: no-repeat;
-    width:150px;
-    height:150px;
+    background-size: 125px 125px;
+    width:125px;
+    height:125px;
     vertical-align: top;
 }
 
 .formInputs {
     display:inline-block;
     width:200px;
-    margin-top: 18px;
     text-align: -webkit-center;
     vertical-align: top;
 }
@@ -30,7 +38,7 @@ body {
         width:200px;
     }
     .formInputs input.firstName, .formInputs input.lastName {
-        width:90px;
+        width:95px;
         margin-bottom: 5px;
     }
     .formInputs input.firstName {
