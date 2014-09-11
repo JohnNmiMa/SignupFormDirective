@@ -25,4 +25,14 @@ var app = angular.module('signupApp', [])
         templateUrl: 'app-template.html',
         replace: false
     }
+})
+
+.directive('customAttr', function() {
+    return {
+        link: function($scope, element, attrs) {
+            console.log($scope);
+            console.log(element);
+            console.log(attrs);
+        }
+    }
 });

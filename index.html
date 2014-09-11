@@ -11,15 +11,17 @@
 <body ng-controller="SignupCtrl">
     <div class="container">
         <div class="row">
-            <h1>Acme Inc.</h1>
-            <opt-in>
-                <!-- set brand logo image as background for this css class  -->
-                <div class="brand-logo col-sm-4"></div>
-            </opt-in>
+            <div class="col-xs-12">
+                <h1 custom-attr="attr1 = true">Acme Inc.</h1>
+                <opt-in>
+                    <!-- set brand logo image as background for this css class  -->
+                    <div class="brand-logo col-sm-4"></div>
+                </opt-in>
 
-            <footer>
-                <p ng-if="submitted == true">Thanks for shopping with Acme, {{data.firstName}} {{data.lastName}}.</p>
-            </footer>
+                <footer>
+                    <p ng-if="submitted == true">Thanks for shopping with Acme, {{data.firstName}} {{data.lastName}}.</p>
+                </footer>
+            </div>
         </div>
     </div>
 
