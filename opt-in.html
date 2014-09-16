@@ -1,0 +1,21 @@
+<form role="form" ng-submit="submitted=true; submit()" name="signupForm" novalidate>
+    <legend>opt-in</legend>
+    <div class="clearfix visible-xs-block"></div>
+    <div class="row">
+        <span ng-transclude></span>
+        <div class="formInputs col-sm-8">
+            <div class="name row">
+                <ul>
+                    <li class="col-xs-6 firstName"><input class="form-control" type="text" ng-model="data.firstName" placeholder="first name" required></li>
+                    <li class="col-xs-6 lastName"><input class="form-control" type="text" ng-model="data.lastName" placeholder="last name" required></li>
+                </ul>
+            </div>
+            <div class="row">
+                <ul>
+                    <li class="col-xs-12 email"><input class="form-control" type="email" ng-model="data.email" placeholder="email" required></li>
+                    <li class="col-xs-12"><button class="btn btn-primary" type="submit">Give us yr infoz!</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</form>
